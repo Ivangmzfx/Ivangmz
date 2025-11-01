@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>CV Diseñador</title>
+  <title>CV-Diseñp y animacion</title>
   <style>
     :root{
       --bg: #f7f8fb;
@@ -18,7 +18,7 @@
     }
     .portfolio {
       color: green;
-      font-style: italic;
+      font-style: italic, ;
     }
     
     *{box-sizing: border-box}
@@ -85,48 +85,40 @@
     .project:hover{transform:translateY(-4px);box-shadow:0 8px 22px rgba(15,23,36,0.15)}
     .btn{transition:opacity 0.2s ease, transform 0.2s ease}
     .btn:hover{opacity:0.85;transform:scale(1.03)}
-    @media (max-width: 600px){
-  .wrap{
+
+@media (max-width: 600px){
+.wrap{
     padding: 12px;
   }
-
-  .headline{
+.headline{
     flex-direction: column;
     gap: 12px;
   }
-
-  h2{
+h2{
     font-size: 20px;
   }
-
-  .summary{
+.summary{
     font-size: 14px;
   }
-
-  .projects{
+.projects{
     grid-template-columns: 1fr;
   }
-
-  .item{
+.item{
     font-size: 14px;
   }
-
-  .tools, .skills{
+.tools, .skills{
     gap: 6px;
   }
-
-  .tool, .skill{
+.tool, .skill{
     font-size: 12px;
     padding: 6px 8px;
   }
-
-  .sidebar{
+.sidebar{
     text-align: center;
     padding: 20px;
     justify-content: center;
   }
-
-  .name{
+.name{
     font-size: 18px;
   }
 }
@@ -139,7 +131,7 @@
     <div class="card" role="document" aria-label="Curriculum Vitae de Ivan">
       <aside class="sidebar">
         <div style="display:flex;flex-direction:column;align-items:center;">
-          <!-- FOTO: reemplazar el div con una etiqueta <img src="#" con tu foto> -->
+          <!-- FOTO: reemplazar # con una etiqueta <img src="/###" con tu foto> -->
           <div class="photo"><img src="#"></div>
           <div class="name">Ivan Emmanuel Gomez Ramirez</div>
           <div class="role">Técnico en Diseño y Animación Digital</div>
@@ -223,11 +215,9 @@
               <a class="btn" href="https://wa.me/+549343527188" onclick="">Contactame</a>
             </div>
             <div class="cta"style="text-align:center;margin-bottom:15px;padding: 15px;">
-          <a href="https://ivangmzfx.github.io/Ivangmz/" class="btn" aria-label="Descargar CV en PDF">Descargar CV (PDF)</a>
+          <a href="/CV_Ivan.PDF" class="btn" aria-label="Descargar CV en PDF">Descargar CV (PDF)</a>
         </div>
-          </div>
-
-
+      </div>
         <footer>
     <p>&copy; <span id="year"></span> IvanGmzFx</p>
 </footer>
@@ -240,4 +230,3 @@
   </div>
 </body>
 </html>
-
