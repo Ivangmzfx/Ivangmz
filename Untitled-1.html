@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ivan — CV | Diseñador Multidisciplinario</title>
+  <style>
+    :root{
+      --bg: #f7f8fb;
+      --card: #ffffff;
+      --muted:#6b7280;
+      --dark:#0f1724;
+      --accent: #0ea5ff; /* Azul eléctrico */
+      --accent-2: #0284c7;
+      --radius: 12px;
+      --glass: rgba(15,23,36,0.06);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    .portfolio {
+      color: green;
+      font-style: italic;
+    }
+    
+    *{box-sizing: border-box}
+    html,body{height:100%;margin:0;background:var(--bg);color:var(--dark)}
+    .wrap{max-width:900px;margin:36px auto;padding:28px}
+
+    .card{background:var(--card);border-radius:var(--radius);box-shadow:0 6px 30px rgba(15,23,36,0.08);overflow:hidden;display:grid;grid-template-columns:320px 1fr}
+
+    /* SIDEBAR */
+    .sidebar{background:linear-gradient(180deg, #0b1220 0%, #0b1020 100%);color:#dbeafe;padding:28px}
+    .photo{width:120px;height:120px;border-radius:16px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;font-weight:700;font-size:22px;color:#022;box-shadow:0 6px 18px rgba(2,132,199,0.2)}
+    .name{font-size:17px;font-weight:700;margin-top:16px}
+    .role{font-size:13px;opacity:0.9;margin-top:6px}
+    .location{margin-top:12px;font-size:13px;color:#c7d2fe}
+    .contact{margin-top:18px;font-size:14px}
+    .contact p{margin:8px 0;opacity:0.95}
+    .label{font-size:11px;color:#9ca3ff;margin-top:18px}
+    .skills{margin-top:8px;display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:rgba(255,255,255,0.06);padding:8px 10px;border-radius:10px;font-size:13px}
+
+    /* MAIN */
+    .main{padding:28px}
+    .headline{display:flex;justify-content:space-between;align-items:flex-start}
+    .summary{font-size:15px;color:var(--dark);line-height:1.4;margin-top:12px}
+    h3{margin:20px 0 10px;font-size:16px}
+    .list{display:flex;flex-direction:column;gap:10px}
+    .item{background:var(--glass);padding:12px;border-radius:10px}
+    .meta{font-size:13px;color:var(--muted)}
+
+    .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+    .project{padding:12px;background:#fff;border-radius:10px;border:1px solid #eef2ff}
+
+    .tools{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+    .tool{padding:6px 8px;border-radius:8px;border:1px solid #e6eefc;font-size:13px}
+
+    .cta{margin-top:18px}
+    .btn{text-align:center;padding:10px 14px;border-radius:10px;background:var(--accent);color:#001; font-weight:700;text-decoration:none;}
+
+    footer{margin-top:18px;font-size:13px;color:var(--muted)}
+
+    /* Responsive */
+    @media (max-width:760px){
+      .card{grid-template-columns:1fr;}
+      .sidebar{display:flex;gap:12px;align-items:center}
+      .photo{width:88px;height:88px}
+    }
+
+    /* Print-friendly */
+    @media print{
+      body{background:white}
+      .wrap{margin:0;padding:0}
+      .card{box-shadow:none}
+      .btn{display:none}
+    }
+
+    /* small helpers */
+    .muted{color:var(--muted)}
+    .accent{color:var(--accent);font-weight:700}
+
+    /* Animaciones suaves */
+    body{opacity:0;animation:fadeIn 0.8s ease-out forwards}
+    @keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+    .project{transition:transform 0.25s ease, box-shadow 0.25s ease}
+    .project:hover{transform:translateY(-4px);box-shadow:0 8px 22px rgba(15,23,36,0.15)}
+    .btn{transition:opacity 0.2s ease, transform 0.2s ease}
+    .btn:hover{opacity:0.85;transform:scale(1.03)}
+    @media (max-width: 600px){
+  .wrap{
+    padding: 12px;
+  }
+
+  .headline{
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  h2{
+    font-size: 20px;
+  }
+
+  .summary{
+    font-size: 14px;
+  }
+
+  .projects{
+    grid-template-columns: 1fr;
+  }
+
+  .item{
+    font-size: 14px;
+  }
+
+  .tools, .skills{
+    gap: 6px;
+  }
+
+  .tool, .skill{
+    font-size: 12px;
+    padding: 6px 8px;
+  }
+
+  .sidebar{
+    text-align: center;
+    padding: 20px;
+    justify-content: center;
+  }
+
+  .name{
+    font-size: 18px;
+  }
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card" role="document" aria-label="Curriculum Vitae de Ivan">
+      <aside class="sidebar">
+        <div style="display:flex;flex-direction:column;align-items:center;">
+          <!-- FOTO: reemplazar el div con una etiqueta <img src="#" con tu foto> -->
+          <div class="photo"><img src="#"></div>
+          <div class="name">Ivan Emmanuel Gomez Ramirez</div>
+          <div class="role">Técnico en Diseño y Animación Digital</div>
+          <div class="location">Strobel, Diamante, Entre Ríos</div>
+        </div>
+
+        <div class="contact">
+          <!-- Reemplazar los placeholders con tus datos en el código: -->
+          <p class="muted">📞 Tel: <strong>+543434527188</strong></p>
+          <p class="muted">✉️ Email: <strong>Ivangomezer@gmail.com</strong></p>
+          <p class="muted">🔗 Portfolio: <strong class="portfolio">PROXIMAMENTE<!--PORTFOLIO_AQUI--></strong></p>
+        </div>
+
+        <div style="margin-top:12px">
+          <div class="label">Habilidades</div>
+          <div class="skills">
+            <div class="skill">Photoshop</div>
+            <div class="skill">Illustrator</div>
+            <div class="skill">After Effects</div>
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">Visual Studio Code</div>
+            <div class="skill">Inglés (intermedio)</div>
+          </div>
+        </div>
+
+        <div style="margin-top:16px">
+          <div class="label">Educación</div>
+          <div class="meta">Desarrollador Web<br><span class="muted">Huawei (2025)</span></div>
+          <div class="meta">Técnico en Diseño y Animación Digital<br><span class="muted">Universidad Siglo 21 (2024)</span></div>
+        </div>
+
+        <section style="display: none">
+          <div class="label">Disponible para</div>
+          <div class="meta">Proyectos freelance · Pasantías · Junior</div>
+        </section>
+      </aside>
+
+      <main class="main">
+        <div class="headline">
+          <div style="display: none;">
+            <h2 style="margin:0">Diseño & Animación Digital</h2>
+            <div class="summary">Soy Técnico en Diseño y Animación Digital. Me especializo en crear piezas visuales impactantes. Busco un lugar donde aprender y aportar mi creatividad técnica.</div>
+          </div>
+        </div>
+
+  <div class="project">
+    <strong>Diseño para redes</strong>
+    <div class="muted">Kit de piezas para redes sociales.</div>
+  </div>
+<div class="project">
+    <strong>Diseño para streaming</strong>
+  <div class="muted">Kit de piezas para streaming.</div>
+</div>
+<div class="project">
+    <strong>Mini web interactiva</strong>
+  <div class="muted">Landing. Formulario.</div>
+  </div>
+
+<div class="item" style="display: none;">
+    <h3>Experiencia / Trabajos personales</h3>
+    <strong>Proyectos personales y colaborativos</strong>
+    <p>Trabajo en animaciones cortas, edición de video y piezas gráficas para proyectos personales y clientes pequeños.</p>
+</div>
+
+
+        <h3>Herramientas & Tecnologías</h3>
+        <div class="tools">
+          <div class="tool">Adobe Photoshop</div>
+          <div class="tool">Adobe Illustrator</div>
+          <div class="tool">After Effects</div>
+          <div class="tool">HTML</div>
+          <div class="tool">CSS</div>
+          <div class="tool">Visual Studio Code</div>
+        </div>
+
+        <h3>Idiomas</h3>
+        <div class="item"><strong>Español</strong> — Nativo · <strong>Inglés</strong> — Intermedio</div>
+        <div style="text-align:center;margin-bottom:15px;padding: 15px;">
+            <div class="cta">
+              <a class="btn" href="https://wa.me/+549343527188" onclick="">Contactame</a>
+            </div>
+            <div class="cta"style="text-align:center;margin-bottom:15px;padding: 15px;">
+          <a href="#" class="btn" aria-label="Descargar CV en PDF">Descargar CV (PDF)</a>
+        </div>
+          </div>
+
+
+        <footer>
+    <p>&copy; <span id="year"></span> IvanGmzFx</p>
+</footer>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
