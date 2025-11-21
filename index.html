@@ -56,7 +56,7 @@
 
     .name{font-size:19px;font-weight:700;}
     .role{font-size:13px;opacity:0.9;margin-top:6px;}
-    .location{font-size:13px;margin-top:10px;color:#93c5fd;}
+    .location{font-size:13px;margin-top:10px;color:#93c5fd;text-decoration:none;}
 
     .contact{margin-top:18px;font-size:14px;}
     .contact p{margin:6px 0;}
@@ -130,6 +130,10 @@
       .skills,.tools{
         justify-content:center;
       }
+      a{
+        color: #93c5fd;
+        text-decoration: none;
+      }
     }
   </style>
 </head>
@@ -141,10 +145,10 @@
       <img src="foto.jpg" alt="Foto de perfil">
       <div class="name">Ivan Emmanuel Gomez Ramirez</div>
       <div class="role">Técnico en Diseño y Animación Digital</div>
-      <div class="location">Strobel, Diamante, Entre Ríos</div>
+      <div class="location"><a href="https://maps.app.goo.gl/aQEERsj4NE7docrSA?g_st=aw" target="_blank">Strobel, Diamante, Entre Ríos</a></div>
 
       <div class="contact">
-        <p>📞 <strong>+54 343 4527188</strong></p>
+        <p>📞 <strong>+54 9 343 4527188</strong></p>
         <p>✉️ <strong>Ivangomezer@gmail.com</strong></p>
         <p>🔗 Portafolio: <strong style="color:#22c55e">Próximamente</strong></p>
       </div>
@@ -161,19 +165,21 @@
       </div>
 
       <div class="label">Educación</div>
-      <div><strong class="item">Huawei<br></strong>
-      <span class="muted">Desarrollador Web (2025)</span>
+      <div><span class="school">escuela secundaria Nº10 david e. garcia. strobel</span></div>
+      <strong class="item">Bachiller en Economia (2018)<br></strong><div>
+      <span class="school">Universidad Siglo 21</span></div>
+      <div><strong class="item">Técnico en Diseño y Animación Digital (2024)<br></strong>
+      <span class="school">Udemy</span>
+      <div><strong class="item">Developer web (2025)<br></strong>
       </div>
-      <div><strong class="item">Universidad Siglo 21<br></strong>
-        <span class="muted">Técnico en Diseño y Animación Digital (2024)</span>
-      </div>
+      
 
     </aside>
 
     <main class="main">
       <h3>Servicios</h3>
 
-      <div class="project">
+      <div class="project" button>
         <strong>Diseño para redes</strong><br>
         <span class="muted">Kit de piezas para redes sociales.</span>
       </div>
