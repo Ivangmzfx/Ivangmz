@@ -150,7 +150,6 @@
       <div class="contact">
         <p>📞 <strong>+54 9 343 4527188</strong></p>
         <p>✉️ <strong>Ivangomezer@gmail.com</strong></p>
-        <p>🔗 Portafolio: <strong style="color:#22c55e">Próximamente</strong></p>
       </div>
 
       <div class="label">Habilidades</div>
@@ -163,7 +162,6 @@
         <div class="skill">VS Code</div>
         <div class="skill">Inglés (Intermedio)</div>
       </div>
-
       <div class="label">Educación</div>
       <div><span class="school">escuela secundaria Nº10 david e. garcia. strobel</span></div>
       <strong class="item">Bachiller en Economia (2018)<br></strong><div>
@@ -172,23 +170,17 @@
       <span class="school">Udemy</span>
       <div><strong class="item">Developer web (2025)<br></strong>
       </div>
-      
-
     </aside>
-
     <main class="main">
-      <h3>Servicios</h3>
-
+      <h3>Habilidades</h3>
       <div class="project" button>
         <strong>Diseño para redes</strong><br>
         <span class="muted">Kit de piezas para redes sociales.</span>
       </div>
-
       <div class="project">
         <strong>Diseño para streaming</strong><br>
         <span class="muted">Overlays, alertas, banners.</span>
       </div>
-
       <div class="project">
         <strong>Mini web interactiva</strong><br>
         <span class="muted">Landing | Formulario.</span>
@@ -196,28 +188,33 @@
 
       <h3>Herramientas & Tecnologías</h3>
       <div class="tools">
-        <div class="tool">Photoshop</div>
-        <div class="tool">Illustrator</div>
-        <div class="tool">After Effects</div>
+        <Div class="tool">CapCut</Div>
+        <Div class="tool">Figma</Div>
+        <div class="tool">Canva</div>
+        <div class="tool">Adobe Photoshop</div>
+        <div class="tool">Adobe Illustrator</div>
+        <div class="tool">Adobe After Effects</div>
         <div class="tool">HTML</div>
         <div class="tool">CSS</div>
-        <div class="tool">JavaScript</div>
-        <div class="tool">VS Code</div>
+        <div class="tool">JS</div>
+        <div class="tool">Visual Studio Code</div>
       </div>
 
       <h3>Idiomas</h3>
       <div class="item">Español — Nativo · Inglés — Intermedio</div>
 
-      <a class="btn" href="https://wa.me/+5493434527188">Contactame</a>
+      <a class="btn" id="btn">Contactame</a>
       <footer>
         © <span id="year"></span> IvanGmzFx
       </footer>
-
     </main>
   </div>
-
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
+  const numero = "5493434527188";
+  const mensaje = "Hola! Vi tu página y quiero más info";
+  const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
+  document.getElementById("btn").href = url;
 </script>
 
 </body>
