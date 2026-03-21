@@ -47,16 +47,19 @@
     }
 
     .sidebar img{
-      width:120px;
-      height:120px;
-      border-radius:16px;
+      width:180px;
+      height: auto;
+      border-radius:20px;
       object-fit:cover;
       margin-bottom:14px;
+      box-shadow: #FAFAFA 5px 5px 10px;
     }
 
     .name{font-size:19px;font-weight:700;}
     .role{font-size:13px;opacity:0.9;margin-top:6px;}
-    .location{font-size:13px;margin-top:10px;color:#93c5fd;text-decoration:none;}
+    .location{font-size:13px;margin-top:10px;color:#60a5fa;text-decoration:none;}
+    
+
 
     .contact{margin-top:18px;font-size:14px;}
     .contact p{margin:6px 0;}
@@ -65,7 +68,7 @@
     .skills,.tools{
       display:flex;
       flex-wrap:wrap;
-      gap:6px;
+      gap:3px;
       margin-top:8px;
     }
 
@@ -81,7 +84,7 @@
       padding:28px;
     }
 
-    h3{margin:18px 0 10px;font-size:16px;}
+    h3{margin:18px 0 10px;font-size:16px;color: #001;}
 
     .project,.item{
       background:var(--glass);
@@ -135,6 +138,13 @@
         text-decoration: none;
       }
     }
+    .perfil{
+      font-weight: bold;
+      font-family: monospace;
+      font-size: 15px;
+      text-align: center;
+    }
+
   </style>
 </head>
 
@@ -142,7 +152,7 @@
   <div class="card" role="document">
     
     <aside class="sidebar">
-      <img src="foto.jpg" alt="Foto de perfil">
+      <img src="Foto.png" alt="Foto de perfil">
       <div class="name">Ivan Emmanuel Gomez Ramirez</div>
       <div class="role">Técnico en Diseño y Animación Digital</div>
       <div class="location"><a href="https://maps.app.goo.gl/aQEERsj4NE7docrSA?g_st=aw" target="_blank">Strobel, Diamante, Entre Ríos</a></div>
@@ -150,7 +160,6 @@
       <div class="contact">
         <p>📞 <strong>+54 9 343 4527188</strong></p>
         <p>✉️ <strong>Ivangomezer@gmail.com</strong></p>
-      </div>
 
       <div class="label">Habilidades</div>
       <div class="skills">
@@ -163,33 +172,32 @@
         <div class="skill">Inglés (Intermedio)</div>
       </div>
       <div class="label">Educación</div>
-      <div><span class="school">escuela secundaria Nº10 david e. garcia. strobel</span></div>
-      <strong class="item">Bachiller en Economia (2018)<br></strong><div>
+      <div><span class="school">Escuela Secundaria Nº10 David E. Garcia. Strobel</span></div>
+      <strong class="item">Bachiller En Economia (2018)<br></strong><div>
       <span class="school">Universidad Siglo 21</span></div>
-      <div><strong class="item">Técnico en Diseño y Animación Digital (2024)<br></strong>
+      <div><strong class="item">Técnico En Diseño Y Animación Digital (2024)<br></strong>
       <span class="school">Udemy</span>
-      <div><strong class="item">Developer web (2025)<br></strong>
+      <div><strong class="item">Developer Web (2025)<br></strong>
       </div>
     </aside>
     <main class="main">
       <h3>Habilidades</h3>
       <div class="project" button>
         <strong>Diseño para redes</strong><br>
-        <span class="muted">Kit de piezas para redes sociales.</span>
+        <span class="muted">Kit de piezas para redes sociales | Edicion de videos</span>
       </div>
       <div class="project">
         <strong>Diseño para streaming</strong><br>
-        <span class="muted">Overlays, alertas, banners.</span>
+        <span class="muted">Diseño de Overlays | alertas | banners.</span>
       </div>
       <div class="project">
         <strong>Mini web interactiva</strong><br>
-        <span class="muted">Landing | Formulario.</span>
+        <span class="muted">Landing | Formulario | Web app | mini juegos basicos.</span>
       </div>
-
       <h3>Herramientas & Tecnologías</h3>
       <div class="tools">
-        <Div class="tool">CapCut</Div>
-        <Div class="tool">Figma</Div>
+        <div class="tool">CapCut</div>
+        <div class="tool">Figma</div>
         <div class="tool">Canva</div>
         <div class="tool">Adobe Photoshop</div>
         <div class="tool">Adobe Illustrator</div>
@@ -197,8 +205,9 @@
         <div class="tool">HTML</div>
         <div class="tool">CSS</div>
         <div class="tool">JS</div>
-        <div class="tool">Visual Studio Code</div>
-      </div>
+        <div class="tool">Visual Studio Code</div></div>
+
+        
 
       <h3>Idiomas</h3>
       <div class="item">Español — Nativo · Inglés — Intermedio</div>
@@ -212,10 +221,9 @@
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
   const numero = "5493434527188";
-  const mensaje = "Hola! Vi tu página y quiero más info 😎";
+  const mensaje = "Hola! Vi tu página y quiero más info";
   const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
   document.getElementById("btn").href = url;
 </script>
-
 </body>
 </html>
